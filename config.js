@@ -4,8 +4,8 @@ import { fileURLToPath } from 'url'
 
 global.owner = [
   ['5219992095479', '👑 Mystic - Creador 👑', true],
-  ['50575008120', '🤖 Mystic - Bot 🤖', true],
-  ['17722386341']
+  ['5219991402134', '🤖 Mystic - Bot 🤖', true],
+  ['5219996125657']
 ] // Cambia los numero que quieras
 global.mods = [] 
 global.prems = [] 
