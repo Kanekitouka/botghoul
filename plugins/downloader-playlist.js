@@ -1,11 +1,10 @@
 /* Created by https://github.com/BrunoSobrino */
        /* Diseño by Yameko-Bot V1*/
 
-import fs from 'fs'
 import yts from "yt-search"
+import fs from 'fs'
 let handler = async (m, { text, conn, args, command, usedPrefix }) => {
 let imagen1 = fs.readFileSync('./src/nuevobot.jpg') 
-let imagen2 = fs.readFileSync('./src/Pre Bot Publi.png')
 let search = await yts(args.join(" "))
 let listSerch = []
 let teskd = `𝐌𝐮𝐬𝐢𝐜𝐚 𝐫𝐞𝐥𝐚𝐜𝐢𝐨𝐧𝐚𝐝𝐚 𝐜𝐨𝐧: ${args.join(" ")}`
