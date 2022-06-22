@@ -66,9 +66,9 @@ text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length
 let imagen1 = fs.readFileSync('./Menu2.jpg')
 let imagen2 = fs.readFileSync('./src/nuevobot.jpg') 
 let imagen3 = fs.readFileSync('./src/Pre Bot Publi.png')
-let texto1 = `╭═─═─═─═─═─═─═╮
-║     𝚃𝙷𝙴 𝙼𝚈𝚂𝚃𝙸𝙲 - 𝙱𝙾𝚃 - 𝙼𝙳
-║╰═─═─═─═─═─══╯
+let texto1 = `╭═─═─═─═─═─═╮
+║   𝚃𝙷𝙴 𝙼𝚈𝚂𝚃𝙸𝙲 - 𝙱𝙾𝚃 - 𝙼𝙳
+║╰═─═─═─═─══╯
 ┠╮
 ║- 𝙷𝙾𝙻𝙰 @${m.sender.split("@")[0]}
 ║- 𝚃𝙸𝙴𝙼𝙿𝙾 𝙰𝙲𝚃𝙸𝚅𝙾: ${uptime}
