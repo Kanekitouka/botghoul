@@ -365,15 +365,12 @@ contextInfo: {
 "previewType": "VIDEO",
 "thumbnail": imagen3,
 "mediaUrl": 'https://youtu.be/eC9TfKICpcY',
-"sourceUrl": 'https://www.pornhub.com'
-}}} 
-conn.sendMessage(m.chat, buttonMessage, fake)
-}
+"sourceUrl": 'https://www.pornhub.com' }}} 
+conn.sendMessage(m.chat, buttonMessage, fake)}
 handler.help = ['menu', 'help', '?']
 handler.tags = ['main']
 handler.command = /^(menu|menú|memu|memú|help|info|comandos|allmenu|2help|menu1.2|ayuda|commands|commandos|m|\?)$/i
 export default handler
-
 const more = String.fromCharCode(8206)
 const readMore = more.repeat(4001)
 function clockString(ms) {
