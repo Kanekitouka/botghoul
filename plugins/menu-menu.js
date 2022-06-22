@@ -149,6 +149,8 @@ let str = `
 ° ඬ⃟📥 _${usedPrefix}play.2 *<texto / enlace / link / url>*_
 ° ඬ⃟📥 _${usedPrefix}play *<texto>*_
 ° ඬ⃟📥 _${usedPrefix}playdoc *<texto>*_
+° ඬ⃟📥 _${usedPrefix}playlist *<texto>*_
+° ඬ⃟📥 _${usedPrefix}playlist2 *<texto>*_
 ° ඬ⃟📥 _${usedPrefix}spotify *<texto>*_
 ° ඬ⃟📥 _${usedPrefix}imagen *<texto>*_
 ° ඬ⃟📥 _${usedPrefix}pinteret *<texto>*_
