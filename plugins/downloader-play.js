@@ -13,8 +13,8 @@ conn.sendHydrated(m.chat, `
 ⌚ *𝙳𝚄𝚁𝙰𝙲𝙸𝙾𝙽:* ${durationH}
 👀 *𝚅𝙸𝚂𝚃𝙰𝚂:* ${viewH}
 `.trim(), author, thumbnail, `${url}`, '𝚄𝚁𝙻', null, null, [
-['𝐀𝐔𝐃𝐈𝐎', `${usedPrefix}yta ${url} yes`],
-['𝐕𝐈𝐃𝐄𝐎', `${usedPrefix}ytv ${url} yes`],
+['𝐀𝐔𝐃𝐈𝐎', `${usedPrefix}yta ${url}`],
+['𝐕𝐈𝐃𝐄𝐎', `${usedPrefix}ytv ${url}`],
 ['𝐌𝐀𝐒 𝐑𝐄𝐒𝐔𝐋𝐓𝐀𝐃𝐎𝐒', `${usedPrefix}playlist ${text}`]  
 ], m)
 }catch(e){
