@@ -36,7 +36,6 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 > pkg install yarn
 > git clone https://github.com/BrunoSobrino/TheMystic-Bot-MD
 > cd TheMystic-Bot-MD
-> git clone https://github.com/BrunoSobrino/node_modules
 > npm install
 > yarn install 
 > npm install
