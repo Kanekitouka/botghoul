@@ -33,6 +33,7 @@ let str = `
 ° ඬ⃟🔊 _Marica quien_
 ° ඬ⃟🔊 _Murio el grupo_
 ° ඬ⃟🔊 _Oh me vengo_
+° ඬ⃟🔊 _tio que rico_
 ° ඬ⃟🔊 _Viernes_
 ° ඬ⃟🔊 _Baneado_
 ° ඬ⃟🔊 _Sexo_
