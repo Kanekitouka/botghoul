@@ -1,6 +1,8 @@
 import { watchFile, unwatchFile } from 'fs'
 import chalk from 'chalk'
 import { fileURLToPath } from 'url'
+import fs from 'fs'
+
 
 global.owner = [
   ['5219992095479', '👑 Mystic - Creador 👑', true],
@@ -69,7 +71,9 @@ global.wm = '★𝚃𝚑𝚎 𝙼𝚢𝚜𝚝𝚒𝚌 - 𝙱𝚘𝚝★'
 global.igfg = '★𝚃𝚑𝚎 𝙼𝚢𝚜𝚝𝚒𝚌 - 𝙱𝚘𝚝★'
 global.wait = '*⌛ _Cargando..._ ▬▬▬▭*'
 
-global.multiplier = 9999 // The higher, The harder levelup
+global.imagen1 = fs.readFileSync('./Menu2.jpg')
+
+global.multiplier = 9999 
 
 global.rpg = {
   emoticon(string) {
