@@ -21,7 +21,6 @@ let text = `
 > pkg install yarn
 > git clone https://github.com/BrunoSobrino/TheMystic-Bot-MD
 > cd TheMystic-Bot-MD
-> npm install
 > yarn install 
 > npm install
 > npm update
