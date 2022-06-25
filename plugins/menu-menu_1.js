@@ -316,8 +316,9 @@ let texto1 = `╭═─═─═─═─═─═╮
 235╠ ${usedPrefix}menu3
 236╠ ${usedPrefix}playlist
 237╠ ${usedPrefix}playlist2
-238╠ ${usedPrefix}xnxxdl
-239╠ ${usedPrefix}xvideosdl
+238╠ ${usedPrefix}xnxxsearch
+239╠ ${usedPrefix}xnxxdl
+240╠ ${usedPrefix}xvideosdl
 ╭─╯
 ╠╯
 ║ㅤㅤㅤ A____A
