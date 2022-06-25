@@ -8,7 +8,7 @@ global.owner = [
   ['5219992095479', '👑 Mystic - Creador 👑', true],
   ['5219991402134', '🤖 Mystic - Bot 🤖', true],
   ['5219996125657']
-] // Cambia los numero que quieras
+] // Cambia los numeros que quieras
 global.mods = [] 
 global.prems = [] 
 global.APIs = { // API Prefix
@@ -72,6 +72,8 @@ global.igfg = '★𝚃𝚑𝚎 𝙼𝚢𝚜𝚝𝚒𝚌 - 𝙱𝚘𝚝★'
 global.wait = '*⌛ _Cargando..._ ▬▬▬▭*'
 
 global.imagen1 = fs.readFileSync('./Menu2.jpg')
+global.imagen2 = fs.readFileSync('./src/nuevobot.jpg') 
+global.imagen3 = fs.readFileSync('./src/Pre Bot Publi.png')
 
 global.multiplier = 9999 
 
