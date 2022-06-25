@@ -1,4 +1,4 @@
-function handler(m, { conn, usedPrefix }) {
+let handler = async (m, { conn, usedPrefix }) => {
 var doc = ['pdf','zip','vnd.openxmlformats-officedocument.presentationml.presentation','vnd.openxmlformats-officedocument.spreadsheetml.sheet','vnd.openxmlformats-officedocument.wordprocessingml.document']
 var document = doc[Math.floor(Math.random() * doc.length)]    
 let text = `
@@ -29,7 +29,7 @@ let buttonMessage= {
 'headerType': 6 }
 conn.sendMessage(m.chat, buttonMessage, { quoted: m })
 const data = global.owner.filter(([id, isCreator]) => id && isCreator)
-this.sendContact(m.chat, data.map(([id, name]) => [id, name]), m)
+await conn.sendContact(m.chat, data.map(([id, name]) => [id, name]), m)
 }
 handler.help = ['owner', 'creator']
 handler.tags = ['info']
