@@ -73,7 +73,6 @@ const { state, saveState } = useSingleFileAuthState(global.authFile)
 const connectionOptions = {
 printQRInTerminal: true,
 auth: state,
-//downloadHistory: false,
 browser: ['TheMystic-Bot','Edge','1.0.0'],
 }
 
