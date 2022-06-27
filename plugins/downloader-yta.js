@@ -38,3 +38,4 @@ m.reply('*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝚁𝚁𝙾𝚁, 𝙿𝙾𝚁 𝙵𝙰�
 handler.help = ['mp3', 'a'].map(v => 'yt' + v + ` <url>`)
 handler.tags = ['downloader']
 handler.command = /^yt(a|mp3)$/i
+exorts default handler
