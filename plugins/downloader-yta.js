@@ -33,7 +33,7 @@ lastError = e
 if ((!(source instanceof ArrayBuffer) || !link || !res.ok) && !isLimit) {
 let res = await fetch("https://violetics.pw/api/downloader/youtube?apikey=beta&url="+args[0])
 let json = await res.json()
-conn.sendFile(m.chat, json.result.meta.url.url, 'error.mp3', null, m, false, { mimetype: 'audio/mp4' })}
+conn.sendFile(m.chat, json.result.meta.url.url, json.result.meta.title + '.mp3', null, m, false, { mimetype: 'audio/mp4' })}
 conn.sendFile(m.chat, source, title + '.mp3', null, m, false, { mimetype: 'audio/mp4' })
 }
 handler.help = ['mp3', 'a'].map(v => 'yt' + v + ` <url>`)
