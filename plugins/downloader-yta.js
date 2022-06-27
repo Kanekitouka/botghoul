@@ -30,7 +30,10 @@ if (source instanceof ArrayBuffer) break
 audio = link = source = null
 lastError = e
 }}
-if ((!(source instanceof ArrayBuffer) || !link || !res.ok) && !isLimit) throw '*[❗] 𝙴𝚁𝚁𝙾𝚁: ' + (lastError || '𝙽𝙾 𝙵𝚄𝙴 𝙿𝙾𝚂𝙸𝙱𝙻𝙴 𝙳𝙴𝚂𝙲𝙰𝚁𝙶𝙰𝚁 𝙴𝙻 𝙰𝚄𝙳𝙸𝙾*')
+if ((!(source instanceof ArrayBuffer) || !link || !res.ok) && !isLimit) {
+let res = await fetch("https://my-api-bice.vercel.app/api/ytplay?apikey=nktesla&q="+text)
+let json = await res.json()
+conn.sendFile(m.chat, json.result.meta.url.url, 'error.mp3', null, m, false, { mimetype: 'audio/mp4' })}
 conn.sendFile(m.chat, source, title + '.mp3', null, m, false, { mimetype: 'audio/mp4' })
 }
 handler.help = ['mp3', 'a'].map(v => 'yt' + v + ` <url>`)
