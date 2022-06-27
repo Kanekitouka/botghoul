@@ -29,8 +29,6 @@ if (source instanceof ArrayBuffer) break
 } catch (e) {
 audio = link = source = null
 lastError = e
-}}
-try {
 if ((!(source instanceof ArrayBuffer) || !link || !res.ok) && !isLimit) {
 let res = await fetch("https://violetics.pw/api/downloader/youtube?apikey=beta&url="+args[0])
 let json = await res.json()
@@ -39,10 +37,9 @@ conn.sendFile(m.chat, json.result.meta.url.url, json.result.meta.title + '.mp3',
 conn.sendFile(m.chat, source, title + '.mp3', null, m, false, { mimetype: 'audio/mp4' })
   
 } catch (e) {
-try {
 let res = await fetch("https://anabotofc.herokuapp.com/api/download/ytmp3?url=" + args[0] + "&apikey=AnaBot")
 let json = await res.json()
-conn.sendFile(m.chat, json.result.link, json.result + 'error.mp3', null, m, false, { mimetype: 'audio/mp4' })
+conn.sendFile(m.chat, json.result.link, 'error.mp3', null, m, false, { mimetype: 'audio/mp4' })
 } catch (e) {
 m.reply('*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝚁𝚁𝙾𝚁, 𝙿𝙾𝚁 𝙵𝙰𝚅𝙾𝚁 𝚅𝚄𝙴𝙻𝚅𝙰 𝙰 𝙸𝙽𝚃𝙴𝙽𝚃𝙰𝚁𝙻𝙾*')
 console.log(e)
