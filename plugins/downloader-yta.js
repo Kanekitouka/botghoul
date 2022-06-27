@@ -42,7 +42,7 @@ conn.sendFile(m.chat, source, title + '.mp3', null, m, false, { mimetype: 'audio
 try {
 let res = await fetch("https://anabotofc.herokuapp.com/api/download/ytmp3?url=" + args[0] + "&apikey=AnaBot")
 let json = await res.json()
-conn.sendFile(m.chat, json.result.link, json.result.judul + '.mp3', null, m, false, { mimetype: 'audio/mp4' })
+conn.sendFile(m.chat, json.result.link, json.result + 'error.mp3', null, m, false, { mimetype: 'audio/mp4' })
 } catch (e) {
 m.reply('*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝚁𝚁𝙾𝚁, 𝙿𝙾𝚁 𝙵𝙰𝚅𝙾𝚁 𝚅𝚄𝙴𝙻𝚅𝙰 𝙰 𝙸𝙽𝚃𝙴𝙽𝚃𝙰𝚁𝙻𝙾*')
 console.log(e)
