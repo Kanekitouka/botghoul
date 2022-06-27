@@ -22,19 +22,19 @@ if (isLimit) continue
 if (res) source = await res.arrayBuffer()
 if (source instanceof ArrayBuffer) break
 conn.sendFile(m.chat, source, title + '.mp3', null, m, false, { mimetype: 'audio/mp4' })}
-} catch (i) {
+} catch (a) {
+try {
 let res = await fetch("https://violetics.pw/api/downloader/youtube?apikey=beta&url="+args[0])
 let json = await res.json()
 conn.sendFile(m.chat, json.result.meta.url.url, json.result.meta.title + '.mp3', null, m, false, { mimetype: 'audio/mp4' })
 } catch (o) {
+try {
 let res = await fetch("https://anabotofc.herokuapp.com/api/download/ytmp3?url=" + args[0] + "&apikey=AnaBot")
 let json = await res.json()
 conn.sendFile(m.chat, json.result.link, 'error.mp3', null, m, false, { mimetype: 'audio/mp4' })
 } catch (e) {
 m.reply('*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝚁𝚁𝙾𝚁, 𝙿𝙾𝚁 𝙵𝙰𝚅𝙾𝚁 𝚅𝚄𝙴𝙻𝚅𝙰 𝙰 𝙸𝙽𝚃𝙴𝙽𝚃𝙰𝚁𝙻𝙾*')
-console.log(e)
-}}
+}}}}
 handler.help = ['mp3', 'a'].map(v => 'yt' + v + ` <url>`)
 handler.tags = ['downloader']
 handler.command = /^yt(a|mp3)$/i
-export default handler
