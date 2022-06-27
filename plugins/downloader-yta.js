@@ -40,7 +40,7 @@ conn.sendFile(m.chat, source, title + '.mp3', null, m, false, { mimetype: 'audio
   
 } catch (e) {
 try {
-let res = await fetch(`https://anabotofc.herokuapp.com/api/download/ytmp3?url=${args[0]}&apikey=AnaBot`)
+let res = await fetch("https://anabotofc.herokuapp.com/api/download/ytmp3?url=" + args[0] + "&apikey=AnaBot")
 let json = await res.json()
 conn.sendFile(m.chat, json.result.link, json.result.judul + '.mp3', null, m, false, { mimetype: 'audio/mp4' })
 } catch (e) {
