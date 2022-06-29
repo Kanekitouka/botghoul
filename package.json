@@ -1,7 +1,7 @@
 {
-    "name": "TheMystic-Bot-MD",
+    "name": "botghoul",
     "version": "1.0.0",
-    "description": "Subscribete al canal de YT The Shadow Borkers",
+    "description": "Cuanto es 1000-7",
     "main": "index.js",
     "type": "module",
     "directories": {
@@ -12,18 +12,18 @@
     "scripts": {
         "start": "node index.js",
         "cli": "node . --optimize_for_size --max_old_space_size=460 index.js",
-        "db": "node . --autocleartmp --db 'mongodb+srv://BrunoSobrino:Akhmad6825@cluster0.mflne.mongodb.net/TheMystic-Bot-MD?retryWrites=true&w=majority'"
+        "db": "node . --autocleartmp --db 'mongodb+srv://kanekitouka:Akhmad6825@cluster0.mflne.mongodb.net/botghoul?retryWrites=true&w=majority'"
     },
-    "homepage": "https://github.com/BrunoSobrino",
+    "homepage": "https://github.com/kanekitouka",
     "author": {
-        "name": "BrunoSobrino"
+        "name": "kanekitouka"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/BrunoSobrino/TheMystic-Bot-MD.git"
+        "url": "git+https://github.com/kanekitouka/botghoul.git"
     },
     "bugs": {
-        "url": "https://github.com/BrunoSobrino/TheMystic-Bot-MD/issues"
+        "url": "https://github.com/kanekitouka/botghoul/issues"
     },
     "license": "MIT",
     "dependencies": {
