@@ -12,18 +12,18 @@
     "scripts": {
         "start": "node index.js",
         "cli": "node . --optimize_for_size --max_old_space_size=460 index.js",
-        "db": "node . --autocleartmp --db 'mongodb+srv://kanekitouka:Akhmad6825@cluster0.mflne.mongodb.net/botghoul?retryWrites=true&w=majority'"
+        "db": "node . --autocleartmp --db 'mongodb+srv://Kanekitouka:Akhmad6825@cluster0.mflne.mongodb.net/botghoul?retryWrites=true&w=majority'"
     },
-    "homepage": "https://github.com/kanekitouka",
+    "homepage": "https://github.com/Kanekitouka",
     "author": {
-        "name": "kanekitouka"
+        "name": "Kanekitouka"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/kanekitouka/botghoul.git"
+        "url": "git+https://github.com/Kanekitouka/botghoul.git"
     },
     "bugs": {
-        "url": "https://github.com/kanekitouka/botghoul/issues"
+        "url": "https://github.com/Kanekitouka/botghoul/issues"
     },
     "license": "MIT",
     "dependencies": {
