@@ -23,8 +23,8 @@ ADVERTENCIA: HEROKU ESTA SUSPENDIENDO CUENTAS POR SOLO USAR EL BOT, POR AHORA NO
 ```
 
 ### `—◉ ⚙️ AJUSTES ⚙️`
-- CLONAR EL REPOSITORIO [Aqui](https://github.com/BrunoSobrino/TheMystic-Bot-MD/fork)
-- CAMBIAR NÚMERO DEL OWNER [Aqui](https://github.com/BrunoSobrino/TheMystic-Bot-MD/blob/master/config.js)
+- CLONAR EL REPOSITORIO [Aqui](https://github.com/Kanekitouka/botghoul/fork)
+- CAMBIAR NÚMERO DEL OWNER [Aqui](https://github.com/Kanekitouka/botghoul/blob/master/config.js)
 
 ### `—◉ 👾 ACTIVAR EN TERMUX 👾`
 ```bash
@@ -38,8 +38,8 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 > pkg install ffmpeg -y
 > pkg install imagemagick -y
 > pkg install yarn
-> git clone https://github.com/BrunoSobrino/TheMystic-Bot-MD
-> cd TheMystic-Bot-MD
+> git clone https://github.com/Kanekitouka/botghoul
+> cd botghoul
 > yarn install 
 > npm install
 > npm update
@@ -50,7 +50,7 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 ```bash
 ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 > cd 
-> cd TheMystic-Bot-MD
+> cd botghoul
 > npm start
 ```
 
@@ -58,7 +58,7 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 ```bash
 ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 > cd 
-> cd TheMystic-Bot-MD
+> cd botghoul
 > rm -rf session.data.json
 > npm start
 ```
@@ -93,7 +93,7 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 ```
 
 ## `EDITOR Y PORPIETARIO DEL BOT` 
-[![BrunoSobrino](https://avatars.githubusercontent.com/u/90165013?s=400&u=946f5c00c527c7e6fa2ef5148c6ad56270bb600e&v=4size=100)](https://github.com/BrunoSobrino/) 
+[![Kanekitouka](https://avatars.githubusercontent.com/u/90165013?s=400&u=946f5c00c527c7e6fa2ef5148c6ad56270bb600e&v=4size=100)](https://github.com/Kanekitouka/) 
 
-`The Mystic - Bot __________ By Bruno Sobrino`
+`botghoul __________ By Kanekitouka`
 
